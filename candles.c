@@ -1,9 +1,10 @@
 /**
  * CS1010 AY2017/8 Semester 1 Lab3 Ex1
  * candles.c
- * <Fill in a description of this program>
- * <Type your name here>
- * <Type your discussion group here>
+ * Calculate the total number of candles burnt given initial number
+ *of candles, and no. of residual to make a new candle
+ * Zhou Shikai
+ * T02
  */
 
 #include <stdio.h>
