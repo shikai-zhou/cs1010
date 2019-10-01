@@ -1,5 +1,5 @@
 /*CS1010 Lab 2
-Program description:Nanotable is a simple table system that parses users' commands and 
+Program description:Nanotable is a simple table system that parses users' commands and
 calculates the sum or average depending on user command
 Name:Zhou Shikai
 Tutorial:T02
@@ -83,18 +83,24 @@ int simple_sum() {
 	return 0;
 }
 
-//calculate average of input numbers truncated to the nearest integer
+//calculate average of input numbers rounded to the nearest integer
 int simple_average() {
-	int num_of_int, sum, average;
+	int num_of_int, sum;
+	float average;
 
 	printf("Please indicate the number of integers:\n" );
 	scanf("%d", &num_of_int);
 
 	sum = get_sum(num_of_int);
-	average = sum/num_of_int;
+	average = (float)sum/num_of_int;
+	//round up the number if decimal place is more than equals .5
+	if (fmod(average,1.0) >= 0.5) {
+		average += 1;
+	}
+	average = (int)average;//truncate to nearest integer
 
-	printf("average is %d\n", average);
-	
+	printf("average is %1.f\n", average);
+
 	return 0;
 }
 
