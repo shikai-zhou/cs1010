@@ -114,7 +114,10 @@ int get_sum (int num_of_int) {
 		//create a variable to store the input number
 		int number;
 		//adding the corresponding ordinal form of the number
-		if (i % 10 == 1) {
+		if (i == 11||i == 12||i == 13){
+			strcpy(ordinal, "th");
+		}
+		else if (i % 10 == 1) {
 			strcpy(ordinal,"st");
 		}
 		else if (i % 10 == 2) {
