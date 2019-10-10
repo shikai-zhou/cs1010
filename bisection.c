@@ -44,7 +44,7 @@ double polynomial (double x, int c3, int c2, int c1, int c0){
 	return p_value;
 }
 //calulate root of equation using bisection method
-//Precondition: Root is not a maximun or minimun point
+//Precondition: Root is not a maximum or minimum point
 double root (double a, double b, int c3, int c2, int c1, int c0){
 	double midpoint, midpoint_value, a_value, b_value, difffence;
 
