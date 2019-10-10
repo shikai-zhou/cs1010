@@ -95,9 +95,10 @@ int simple_average() {
 	average = (float)sum/num_of_int;
 	//round up the number if decimal place is more than equals .5
 	if (fmod(average,1.0) >= 0.5) {
-		average += 1;
+		average = ceiling(average);
+	}else{
+	average = floor(average);//truncate to nearest integer
 	}
-	average = (int)average;//truncate to nearest integer
 
 	printf("average is %1.f\n", average);
 
