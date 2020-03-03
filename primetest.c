@@ -1,3 +1,6 @@
+/* primetest.c
+*  Simple primality test without using any sieves
+*/
 #include <stdio.h>
 
 int prime (int num){
