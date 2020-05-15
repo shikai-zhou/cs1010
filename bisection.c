@@ -1,8 +1,5 @@
 /**
- * CS1010 AY2017/8 Semester 1 Lab3 Ex3
  * bisection.c
- * Zhou Shikai
- * T02
  * Bisection Method:Calculate the root of a polynomial equation,
  * given 2 points on a,b on either side of the root, where a,b are not both
  * positive or both negative
